@@ -1,4 +1,21 @@
-class MergeSortedArraysClass {
+class ArrayCustomFunctions {
+    /**Given an array find the first recurring value*/
+//Test case
+/*
+    val myArray = arrayOf(1,2,3,4,1,4)
+    val myArray = arrayOf("a","b","c","b")
+    println(firstRecurringValue(myArray))
+ */
+    fun <T> firstRecurringValue(array: Array<T>): T? {
+        val hashSet: MutableSet<T> = mutableSetOf<T>()
+        for (element in array) {
+            if (!hashSet.contains(element))
+                hashSet.add(element)
+            else
+                return element
+        }
+        return null
+    }
 
     fun mergeSortedArrays(array1: Array<Int?>, array2: Array<Int?>): Array<Int?> {
 
@@ -40,4 +57,21 @@ class MergeSortedArraysClass {
         }
         return returnArray
     }//O(a+b) time complexity
+
+    fun reverse(str: String): String {
+        //check input
+
+
+        //val strArray = str.map { it.toString() }.toTypedArray()
+
+        val backwards: Array<Char?> = arrayOfNulls<Char>(str.length)
+
+        for (i in str.indices) {
+            backwards[i] = str[str.length - 1 - i]
+            //backwards[i]= strArray[str.length-1-i]
+        }
+
+        return backwards.joinToString("")
+
+    }
 }

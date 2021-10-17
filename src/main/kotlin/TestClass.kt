@@ -1,20 +1,16 @@
-
-
 fun main() {
-    //input
-
-//    val array1: Array<Int?> = arrayOf(null)
-//    val array2: Array<Int?> = arrayOf(0, 2)
-//    val newArray = mergeSortedArrays(array1, array2)
-//
-//    for (index in newArray) {
-//        print(index)
-//    }
+    val myStack = StackViaLL<String>()
+    myStack.push("aaa")
+    myStack.push("bbb")
+    myStack.push("v")
+    println("Peek at the stack ${myStack.peek()}")
+    myStack.pop()
+    println("Empty Stack? :${myStack.isEmpty()}")
+    myStack.printStack()
+    myStack.pop()
+    myStack.pop()
+    println("popped ${myStack.pop()}")
+    myStack.printStack()
+    println("Empty Stack? :${myStack.isEmpty()}")
 }
-
-
-
-
-
-
 
