@@ -1,3 +1,20 @@
+/** Testing */
+/*
+val myStack = StackViaLL<String>()
+    myStack.push("aaa")
+    myStack.push("bbb")
+    myStack.push("v")
+    println("Peek at the stack ${myStack.peek()}")
+    myStack.pop()
+    println("Empty Stack? :${myStack.isEmpty()}")
+    myStack.printStack()
+    myStack.pop()
+    myStack.pop()
+    println("popped ${myStack.pop()}")
+    myStack.printStack()
+    println("Empty Stack? :${myStack.isEmpty()}")
+ */
+
 data class NodeForStack<T : Any?>
     (
     var value: T,
@@ -6,9 +23,9 @@ data class NodeForStack<T : Any?>
 
 //Stack created using Linked List
 class StackViaLL<T : Any?>(
-    var top: NodeForStack<T>? = null,
-    var bottom: NodeForStack<T>? = null,
-    var length: Int = 0
+    private var top: NodeForStack<T>? = null,
+    private var bottom: NodeForStack<T>? = null,
+    private var length: Int = 0
 ) {
 
     fun peek(): NodeForStack<T>? {
