@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="workspace" />
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="added stack via arraylist">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StackViaArrayList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StackViaArrayList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +39,8 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1zQ3x0RvO0lDfjp8RKZ5scujHUT" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -128,21 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634295705613</updated>
     </task>
-    <task id="LOCAL-00007" summary="Implemented stack using linked list">
-      <created>1634317374430</created>
+    <task id="LOCAL-00007" summary="added stack via arraylist">
+      <created>1634500250157</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1634317374430</updated>
+      <updated>1634500250157</updated>
     </task>
-    <task id="LOCAL-00008">
-      <created>1634622043131</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1634622043131</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +157,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="reverse function and mergeSortedArray function added" />
-    <MESSAGE value="Implemented stack using linked list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented stack using linked list" />
+    <MESSAGE value="added stack via arraylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stack via arraylist" />
   </component>
 </project>
