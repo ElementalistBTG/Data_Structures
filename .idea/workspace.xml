@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="binary search tree">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Queues.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Trees.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="raynderleech inspired methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634634279193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="raynderleech inspired methods">
+      <created>1634803095656</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634803095656</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +170,7 @@
     <MESSAGE value="reverse function and mergeSortedArray function added" />
     <MESSAGE value="added stack via arraylist" />
     <MESSAGE value="binary search tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="binary search tree" />
+    <MESSAGE value="raynderleech inspired methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="raynderleech inspired methods" />
   </component>
 </project>
