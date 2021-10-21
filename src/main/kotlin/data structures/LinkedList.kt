@@ -1,6 +1,8 @@
+package `data structures`
+
 /** Test Code */
 /*
-   val list = LinkedList<Int>()
+   val list = `data structures`.LinkedList<Int>()
     list.add(3)
     list.add(2)
     list.add(1)
@@ -8,17 +10,17 @@
     list.add(5)
 
     println(list)
-    list.printInReverse()
-    println(list.getMiddle()?.value)
-    println("Reversed: ${list.reversed()}")
+    list.`data structures`.printInReverse()
+    println(list.`data structures`.getMiddle()?.value)
+    println("Reversed: ${list.`data structures`.reversed()}")
 
-    val list2 = LinkedList<Int>()
+    val list2 = `data structures`.LinkedList<Int>()
     list2.add(1)
     list2.add(2)
     list2.add(3)
     list2.add(4)
     list2.add(5)
-    val other = LinkedList<Int>()
+    val other = `data structures`.LinkedList<Int>()
     other.add(-1)
     other.add(0)
     other.add(2)
@@ -26,7 +28,7 @@
     other.add(7)
     println("Left: $list2")
     println("Right: $other")
-    println("Merged: ${list2.mergeSorted(other)}")
+    println("Merged: ${list2.`data structures`.mergeSorted(other)}")
  */
 
 //Note: Using T : Any to set an upper bound for the type parameter ensures that T will always be a non-nullable type.

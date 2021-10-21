@@ -1,4 +1,4 @@
-import Queue
+package `data structures`
 
 //General tree implementation
 class TreeNode2<T>(val value: T) {
@@ -15,7 +15,7 @@ class TreeNode2<T>(val value: T) {
 /* using a class that inherits from queue the code works */
     fun forEachLevelOrder(visit: Visitor<T>) {
         visit(this)
-        //val queue = Queue<TreeNode2<T>>()
+        //val queue = `data structures`.Queue<`data structures`.TreeNode2<T>>()
         val queue = StackQueue<TreeNode2<T>>()
         children.forEach { queue.enqueue(it) }
 

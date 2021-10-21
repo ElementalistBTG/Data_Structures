@@ -1,3 +1,5 @@
+package `data structures`
+
 data class TreeNode(
     val value: Int,
     var left: TreeNode? = null,
@@ -131,7 +133,7 @@ class BinarySearchTree(var root: TreeNode? = null) {
 
 /** Testing */
 /*
-    val binarySearchTree = BinarySearchTree()
+    val binarySearchTree = `data structures`.BinarySearchTree()
     binarySearchTree.insert(50)
     binarySearchTree.insert(40)
     binarySearchTree.insert(45)

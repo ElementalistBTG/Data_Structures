@@ -1,18 +1,20 @@
+package `data structures`
+
 /** Testing */
 /*
-val myStack = StackViaLL<String>()
+val myStack = `data structures`.StackViaLL<String>()
     myStack.push("aaa")
     myStack.push("bbb")
     myStack.push("v")
     println("Peek at the stack ${myStack.peek()}")
     myStack.pop()
-    println("Empty Stack? :${myStack.isEmpty()}")
+    println("Empty `data structures`.Stack? :${myStack.isEmpty()}")
     myStack.printStack()
     myStack.pop()
     myStack.pop()
     println("popped ${myStack.pop()}")
     myStack.printStack()
-    println("Empty Stack? :${myStack.isEmpty()}")
+    println("Empty `data structures`.Stack? :${myStack.isEmpty()}")
  */
 
 data class NodeForStack<T : Any?>
@@ -21,7 +23,7 @@ data class NodeForStack<T : Any?>
     var next: NodeForStack<T>?
 )
 
-//Stack created using Linked List
+//`data structures`.Stack created using Linked List
 class StackViaLL<T : Any?>(
     private var top: NodeForStack<T>? = null,
     private var bottom: NodeForStack<T>? = null,
@@ -45,7 +47,7 @@ class StackViaLL<T : Any?>(
         length++
     }
 
-    fun pop():NodeForStack<T>? {
+    fun pop(): NodeForStack<T>? {
         if(length==0){
             return null
         }else if(length==1){

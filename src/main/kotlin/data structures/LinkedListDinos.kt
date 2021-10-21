@@ -1,6 +1,8 @@
+package `data structures`
+
 /**test code below*/
 /*
-val myLinkedList = LinkedListDinos<Int>()
+val myLinkedList = `data structures`.LinkedListDinos<Int>()
     myLinkedList.append(2)
     myLinkedList.append(15)
     myLinkedList.append(37)
@@ -8,7 +10,7 @@ val myLinkedList = LinkedListDinos<Int>()
     myLinkedList.insert(2,876)
     myLinkedList.remove(1)
     myLinkedList.printList()
-    myLinkedList.reverse()
+    myLinkedList.`data structures`.reverse()
     myLinkedList.printList()
  */
 
@@ -69,7 +71,7 @@ class LinkedListDinos<T:Any>(){
         length--
     }
 
-    private fun getElementAtIndex(index : Int):CustomNode<T>?{
+    private fun getElementAtIndex(index : Int): CustomNode<T>?{
         var currentNode = head
         var counter = index
         while(counter>0){

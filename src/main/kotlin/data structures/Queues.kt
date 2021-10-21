@@ -1,3 +1,5 @@
+package `data structures`
+
 interface Queue<T : Any> {
 
     fun enqueue(element: T): Boolean
@@ -90,7 +92,7 @@ fun <T : Any> Queue<T>.nextPlayer(): T? {
     return person
 }
 
-//reverse a queue (using a stack)
+//`data structures`.reverse a queue (using a stack)
 fun <T : Any> Queue<T>.reverse() {
     val aux = StackImpl<T>()
 

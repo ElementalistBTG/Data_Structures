@@ -1,3 +1,5 @@
+package `data structures`
+
 import java.lang.Math.max
 
 typealias Visitor2<T> = (T) -> Unit
