@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 //General tree implementation
 class TreeNode2<T>(val value: T) {

@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 import java.lang.Math.max
 

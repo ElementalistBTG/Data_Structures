@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 /**test code below*/
 /*
