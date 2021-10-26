@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 interface Queue<T : Any> {
 

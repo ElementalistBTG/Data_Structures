@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 interface Stack<T : Any> {
     fun push(element: T)

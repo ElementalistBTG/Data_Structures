@@ -1,4 +1,4 @@
-package `data structures`
+package data_structures
 
 class ArrayCustomFunctions {
     /**Given an array find the first recurring value*/

@@ -4,17 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="raynderleech inspired methods">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ArrayCustomFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/ArrayCustomFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryNode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/BinaryNode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/BinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/LinkedList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LinkedListDinos.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/LinkedListDinos.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Queues.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/Queues.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StackViaArrayList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/StackViaArrayList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StackViaLL.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/StackViaLL.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Trees.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data structures/Trees.kt" afterDir="false" />
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="added stack via arraylist">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_μ_μ__[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/ArrayCustomFunctions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/ArrayListQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinaryNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinaryNodeKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinarySearchTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/CustomNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListDinos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/NodeForStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Queue$DefaultImpls.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/QueuesKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack$DefaultImpls.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl$Companion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaArrayListKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaLL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode2$search$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreesKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/recursionClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Algorithms/Recursion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Algorithms/Recursion.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +84,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dinos\IdeaProjects\Data_Structures\src\main\kotlin\data structures" />
       <recent name="C:\Users\Dinos\IdeaProjects\Data_Structures\src\main" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.TestClassKt">
@@ -80,7 +96,7 @@
       </method>
     </configuration>
     <configuration name="TestClassKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="data structures.TestClassKt" />
+      <option name="MAIN_CLASS_NAME" value="TestClassKt" />
       <module name="test.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,28 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634500250157</updated>
     </task>
-    <task id="LOCAL-00008" summary="binary search tree">
-      <created>1634634279193</created>
+    <task id="LOCAL-00008" summary="added stack via arraylist">
+      <created>1635110848179</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1634634279193</updated>
+      <updated>1635110848179</updated>
     </task>
-    <task id="LOCAL-00009" summary="raynderleech inspired methods">
-      <created>1634803095656</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1634803095656</updated>
-    </task>
-    <task id="LOCAL-00010" summary="raynderleech inspired methods">
-      <created>1634804310930</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1634804310930</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,8 +193,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="reverse function and mergeSortedArray function added" />
     <MESSAGE value="added stack via arraylist" />
-    <MESSAGE value="binary search tree" />
-    <MESSAGE value="raynderleech inspired methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="raynderleech inspired methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stack via arraylist" />
   </component>
 </project>
