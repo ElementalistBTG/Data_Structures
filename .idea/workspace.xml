@@ -4,37 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="added stack via arraylist">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_μ_μ__[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/ArrayCustomFunctions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/ArrayListQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinaryNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinaryNodeKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/BinarySearchTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/CustomNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListDinos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/LinkedListKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/NodeForStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Queue$DefaultImpls.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/QueuesKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack$DefaultImpls.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl$Companion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaArrayListKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaLL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode2$search$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreeNode2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/TreesKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/kotlin/main/recursionClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Algorithms/Recursion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Algorithms/Recursion.kt" afterDir="false" />
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="redistribution of files in packages">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,5 +18,15 @@ public class Main {
         }
 
         return Arrays.toString(backwards).toString();
+    }
+
+    //recursive approach
+    public static String reverseRecursively(String str){
+
+        if (Objects.equals(str, "")) return "";
+        else{
+            return reverseRecursively(str.substring(1))+str.charAt(0);
+        }
+
     }
 }
