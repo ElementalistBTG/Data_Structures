@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="redistribution of files in packages">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2021_11_13_____Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Main.java" afterDir="false" />
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="versioning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635110848179</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="versioning">
+      <created>1635229156202</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635229156202</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +171,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="reverse function and mergeSortedArray function added" />
     <MESSAGE value="added stack via arraylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stack via arraylist" />
+    <MESSAGE value="versioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="versioning" />
   </component>
 </project>
