@@ -10,6 +10,7 @@ class TreeNode2<T>(val value: T) {
         visit(this)
         children.forEach {
             it.forEachDepthFirst(visit)
+            //println(it.value)
         }
     }
 /* using a class that inherits from queue the code works */
@@ -70,6 +71,16 @@ class TreeNode2<T>(val value: T) {
 }
 
 typealias Visitor<T> = (TreeNode2<T>) -> Unit
+
+//test cases
+
+//val myTree = TreeNode2<Int>(5)
+//myTree.add(TreeNode2(1))
+//myTree.add(TreeNode2(2))
+//
+//val my2tree = TreeNode2<Int>(15)
+//my2tree.add(myTree)
+//my2tree.forEachDepthFirst {  }
 
 
 

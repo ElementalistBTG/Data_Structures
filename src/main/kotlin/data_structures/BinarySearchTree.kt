@@ -129,6 +129,95 @@ class BinarySearchTree(var root: TreeNode? = null) {
     fun showTree() {
         println(root)
     }
+
+    // breadth first search
+    // note: this function belongs to Algorithms section
+    fun breadthFirstSearch(): ArrayList<Int> {
+        var currentNode = this.root
+        val resultArray = ArrayList<Int>()
+        val queue = ArrayList<TreeNode?>()
+        queue.add(currentNode)
+        while (queue.size > 0) {
+            currentNode = queue.removeAt(0)
+            resultArray.add(currentNode!!.value)
+            if (currentNode.left != null) {
+                queue.add(currentNode.left)
+            }
+            if (currentNode.right != null) {
+                queue.add(currentNode.right)
+            }
+        }
+        return resultArray
+    }
+
+    // breadth first search recursive
+    // note: this function belongs to Algorithms section
+    fun breadthFirstSearchRecursive(
+        queue: ArrayList<TreeNode?>,
+        resultArray: ArrayList<Int>
+    ): ArrayList<Int> {
+        if (queue.size == 0) {
+            return resultArray
+        }
+        val currentNode = queue.removeAt(0)
+        resultArray.add(currentNode!!.value)
+        if (currentNode.left != null) {
+            queue.add(currentNode.left)
+        }
+        if (currentNode.right != null) {
+            queue.add(currentNode.right)
+        }
+        return breadthFirstSearchRecursive(queue, resultArray)
+    }
+
+    // dfs
+    fun DFSInOrder(): ArrayList<Int?> {
+        val answer = ArrayList<Int?>()
+        return traverseInOrder(this.root, answer)
+    }
+
+    fun DFSPreOrder(): ArrayList<Int?> {
+        val answer = ArrayList<Int?>()
+        return traversePreOrder(this.root, answer)
+    }
+
+    fun DFSPostOrder(): ArrayList<Int?> {
+        val answer = ArrayList<Int?>()
+        return traversePostOrder(this.root, answer)
+    }
+
+    private fun traverseInOrder(node: TreeNode?, array: ArrayList<Int?>): ArrayList<Int?> {
+        if (node?.left != null) {
+            traverseInOrder(node.left, array)
+        }
+        array.add(node?.value)
+        if (node?.right != null) {
+            traverseInOrder(node.right, array)
+        }
+        return array
+    }
+
+    private fun traversePreOrder(node: TreeNode?, array: ArrayList<Int?>): ArrayList<Int?> {
+        array.add(node?.value)
+        if (node?.left != null) {
+            traversePreOrder(node.left, array)
+        }
+        if (node?.right != null) {
+            traversePreOrder(node.right, array)
+        }
+        return array
+    }
+
+    private fun traversePostOrder(node: TreeNode?, array: ArrayList<Int?>): ArrayList<Int?> {
+        if (node?.left != null) {
+            traversePostOrder(node.left, array)
+        }
+        if (node?.right != null) {
+            traversePostOrder(node.right, array)
+        }
+        array.add(node?.value)
+        return array
+    }
 }
 
 /** Testing */
