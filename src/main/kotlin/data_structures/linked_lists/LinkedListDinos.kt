@@ -1,4 +1,4 @@
-package data_structures
+package data_structures.linked_lists
 
 /**test code below*/
 /*
@@ -26,7 +26,7 @@ data class CustomNode<T : Any>(var value: T, var next: CustomNode<T>? = null) {
     }
 }
 
-class LinkedListDinos<T:Any>(){
+class LinkedListDinos<T:Any>{
     private var head : CustomNode<T>? = null
     private var tail : CustomNode<T>? = null
     private var length = 0

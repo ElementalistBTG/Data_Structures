@@ -1,28 +1,9 @@
-package data_structures
+package data_structures.arrays
 
-class ArrayCustomFunctions {
-    /**Given an array find the first recurring value*/
-//Test case
-/*
-    val myArray = arrayOf(1,2,3,4,1,4)
-    val myArray = arrayOf("a","b","c","b")
-    println(firstRecurringValue(myArray))
- */
-    fun <T> firstRecurringValue(array: Array<T>): T? {
-        val hashSet: MutableSet<T> = mutableSetOf<T>()
-        for (element in array) {
-            if (!hashSet.contains(element))
-                hashSet.add(element)
-            else
-                return element
-        }
-        return null
-    }
+class MergeSortedArrays {
 
     fun mergeSortedArrays(array1: Array<Int?>, array2: Array<Int?>): Array<Int?> {
-
-        /**check input */
-
+        //Check input
         //if one array is empty
         if (array1.isEmpty()) {
             return array2
@@ -31,7 +12,7 @@ class ArrayCustomFunctions {
             return array1
         }
 
-        //check for null elements
+        //check for null elements (since we use Array<Int?>)
 
         //return array
         val returnArray = arrayOfNulls<Int?>(array1.size + array2.size)
@@ -60,20 +41,41 @@ class ArrayCustomFunctions {
         return returnArray
     }//O(a+b) time complexity
 
-    fun reverse(str: String): String {
-        //check input
+    fun mergeSortedArrays2(arr1: IntArray, arr2: IntArray): IntArray {
+        var i = 0
+        var j = 0
+        var k = 0
 
+        val mergedArray = IntArray(arr1.size + arr2.size)
 
-        //val strArray = str.map { it.toString() }.toTypedArray()
-
-        val backwards: Array<Char?> = arrayOfNulls<Char>(str.length)
-
-        for (i in str.indices) {
-            backwards[i] = str[str.length - 1 - i]
-            //backwards[i]= strArray[str.length-1-i]
+        while (i < arr1.size && j < arr2.size) {
+            if (arr1[i] < arr2[j]) {
+                mergedArray[k] = arr1[i]
+                i++
+            } else {
+                mergedArray[k] = arr2[j]
+                j++
+            }
+            k++
         }
 
-        return backwards.joinToString("")
+        while (i < arr1.size) {
+            mergedArray[k] = arr1[i]
+            i++
+            k++
+        }
 
+        while (j < arr2.size) {
+            mergedArray[k] = arr2[j]
+            j++
+            k++
+        }
+
+        return mergedArray
+    }
+
+    fun main() {
+        val mergedArray = mergeSortedArrays2(intArrayOf(0, 2, 3, 56), intArrayOf(0, 6, 7))
+        println(mergedArray.contentToString())
     }
 }

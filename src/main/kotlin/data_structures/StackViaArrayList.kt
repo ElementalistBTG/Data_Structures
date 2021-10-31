@@ -1,5 +1,7 @@
 package data_structures
 
+import data_structures.linked_lists.LinkedList
+
 interface Stack<T : Any> {
     fun push(element: T)
     fun pop(): T?
