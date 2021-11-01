@@ -1,4 +1,6 @@
-package data_structures
+package data_structures.queues
+
+import data_structures.StackImpl
 
 interface Queue<T : Any> {
 
@@ -7,7 +9,6 @@ interface Queue<T : Any> {
     fun dequeue(): T?
 
     val count: Int
-        get
 
     val isEmpty: Boolean
         get() = count == 0
@@ -15,7 +16,7 @@ interface Queue<T : Any> {
     fun peek(): T?
 }
 
-//implement a queue using arraylist
+//implement a queue using arraylist (we generally never use and array to create a queue)
 class ArrayListQueue<T : Any> : Queue<T> {
     private val list = arrayListOf<T>()
 

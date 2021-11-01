@@ -1,4 +1,7 @@
-package data_structures
+package data_structures.trees
+
+import data_structures.queues.ArrayListQueue
+import data_structures.queues.StackQueue
 
 //General tree implementation
 class TreeNode2<T>(val value: T) {

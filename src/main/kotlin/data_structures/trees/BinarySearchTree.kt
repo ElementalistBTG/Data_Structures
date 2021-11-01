@@ -41,10 +41,10 @@ class BinarySearchTree(var root: TreeNode? = null) {
     fun lookup(value: Int): Boolean {
         var nodeToCompare: TreeNode? = root
         while (nodeToCompare != null) {
-            if (value > nodeToCompare.value) {
-                nodeToCompare = nodeToCompare.right
+            nodeToCompare = if (value > nodeToCompare.value) {
+                nodeToCompare.right
             } else if (value < nodeToCompare.value) {
-                nodeToCompare = nodeToCompare.left
+                nodeToCompare.left
             } else {
                 return true
             }
@@ -123,7 +123,6 @@ class BinarySearchTree(var root: TreeNode? = null) {
         }
         return false
     }
-
 
     //show my tree
     fun showTree() {
