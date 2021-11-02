@@ -17,11 +17,11 @@ class Solution{
             return array
         }
         //sort the array
-        array.sort()
+        array.sort() //O(nlog(n)) to sort with built-in DualPivotQuickSort
 
         var i = 0
         var j = array.size-1
-        while(true){
+        while(true){ //O(n)
             if(i==j){
                 break
             }else{
@@ -35,13 +35,31 @@ class Solution{
             }
         }
         return array
-    }
+    }//so we have O(nlog(n)) time complexity, O(n) space complexity
+
+    fun twoSumWithMap(array: IntArray,target: Int): IntArray{
+        //return the places of the correct answers
+        val returnArray = IntArray(2)
+        val map = HashMap<Int,Int>()
+        for(i in array.indices){
+            //check if the array has an element which equal to the difference between the target and the current element
+            val dif = map[target-array[i]]
+            if(dif==null){
+                map[array[i]] = i
+            }else{//match found
+                returnArray[0] = dif
+                returnArray[1] = i
+                break
+            }
+        }
+        return returnArray
+    }//O(n) time complexity, O(n) space complexity
 }
 
 fun main(){
     val array = intArrayOf(1,3,5,7,9,11)
     val myClass = Solution()
-    val resultArray = myClass.twoSum(array,11)
+    val resultArray = myClass.twoSumWithMap(array,10)
     println("result= ${resultArray.contentToString()}")
 //    println("result= ${Arrays.toString(resultArray)}")
 //    println("result= ${resultArray.joinToString("-")}")
