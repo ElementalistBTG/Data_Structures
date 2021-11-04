@@ -66,3 +66,5 @@ data_structures/linked_lists/doubly/MyDoublyLinkedList.java
  data_structures.linked_lists.doubly.MyDoublyLinkedList
 algorithms/sorting/InsertionSort.java
  algorithms.sorting.InsertionSort
+exercises/SearchInRotatedSortedArrayJava.java
+ exercises.SearchInRotatedSortedArrayJava
