@@ -1,3 +1,5 @@
+exercises/SearchInRotatedSortedArrayJava.java
+ exercises.SearchInRotatedSortedArrayJava
 dynamic_programming/DynamicFibonacci.java
  dynamic_programming.DynamicFibonacciJava
 data_structures/queues/using_linked_list/MyQueue.java
@@ -66,5 +68,3 @@ data_structures/linked_lists/doubly/MyDoublyLinkedList.java
  data_structures.linked_lists.doubly.MyDoublyLinkedList
 algorithms/sorting/InsertionSort.java
  algorithms.sorting.InsertionSort
-exercises/SearchInRotatedSortedArrayJava.java
- exercises.SearchInRotatedSortedArrayJava
