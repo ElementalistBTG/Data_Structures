@@ -9,7 +9,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
  */
 
 class BestTimeToBuyStocks {
-    /** Brute Force O(n*n) time, O(1) space */
+    /** Brute Force O(n*n) time, O(n) space */
 //    fun maxProfit(prices: IntArray): Int {
 //        var max = 0
 //        val cache = HashMap<Int, Int>()
