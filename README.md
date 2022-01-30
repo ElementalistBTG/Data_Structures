@@ -1,3 +1,5 @@
+![DSA in Kotlin](src/banner.jpg)
+
 # Data_Structures and Algorithms
 
 This repository contains Data structures and Algorithms implementations in Kotlin (mostly) and Java that i have created when taking the course https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/
