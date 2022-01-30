@@ -1,4 +1,4 @@
-![DSA in Kotlin](src/banner.jpg)
+![DSA in Kotlin](src/main/banner.jpg)
 
 # Data_Structures and Algorithms
 
