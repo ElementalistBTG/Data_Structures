@@ -50,8 +50,23 @@ class ContainsDuplicate{
         }
         return false
     }//same code but WAY faster!
+
+    fun <T:Any> Solution  (array : Array<T>) : Boolean{
+        val mySet = HashSet<T>()
+        for (value in array){
+            if(!mySet.contains(value)){
+                mySet.add(value)
+            }else{
+                return true
+            }
+        }
+        return false
+    }
 }
 
 fun main(){
+    val class1 = ContainsDuplicate()
+    val myArray = intArrayOf(1,2,3,4,5,6,8).toTypedArray()
+    println(class1.Solution(myArray))
 
 }
