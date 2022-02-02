@@ -1,6 +1,8 @@
-package algorithms.Recursion
+package algorithms.recursion
 
+import data_structures.StackImpl
 import data_structures.TreeNode
+import kotlin.collections.ArrayList
 import kotlin.math.max
 
 
@@ -27,7 +29,7 @@ class RecursionExamples {
 
     /*
 Given the root of a binary tree, return its maximum depth.
-In input we have given tree node values & in output we have to return it's maximum height.
+In input we have given tree node values & in output we have to return its maximum height.
      */
     fun maxDepth(root: TreeNode?): Int {
         // Base Condition
@@ -70,6 +72,34 @@ In input we have given tree node values & in output we have to return it's maxim
         // Induction
         arr.add(lastNum) // adding 5 to [0,1,2] which becomes -> [0,1,2,5]
         return arr
+    }
+
+    /*
+    Given a stack, sort it in asscending order
+     */
+    fun sortStack(st: StackImpl<Int?>): StackImpl<Int?> {
+        if (st.count == 1) return st // Base Condition
+        // Hypothesis
+        val temp = st.pop() // getting 2 out
+        sortStack(st) // sorting the stack from [5,1,0] -> [0,1,5]
+        return insertElementAtStack(st, temp)
+    }
+
+    fun insertElementAtStack(st: StackImpl<Int?>, temp: Int?): StackImpl<Int?> {
+        // Base Condition
+        if (temp != null) {
+            if (st.count == 0 || temp >= st.peek()!!) { // checking if let say we have 6 in temp & 6 is greater then 5
+                st.push(temp) // we will simply add it into our stack
+                return st
+            }
+        }
+        // Hypothesis
+        val value = st.pop() // getting 5 out stack becomes -> [0,1]
+        insertElementAtStack(st, temp) // insrting 2 to [0,1] which becomes -> [0,1,2]
+        // Induction
+        st.push(value) // adding 5 to [0,1,2] which becomes -> [0,1,2,5]
+        return st
+
     }
 
 }
