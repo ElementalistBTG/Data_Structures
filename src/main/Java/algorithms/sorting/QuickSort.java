@@ -29,6 +29,7 @@ public class QuickSort {
             if (array[i] < pivotValue) {
                 swap(array, i, partitionIndex);
                 partitionIndex++;
+                //partitionIndex moves only when we find a value < pivotValue
             }
         }
         swap(array, right, partitionIndex);

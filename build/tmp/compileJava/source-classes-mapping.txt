@@ -9,8 +9,8 @@ algorithms/sorting/BubbleSort.java
 data_structures/hash_tables/MyHashTable.java
  data_structures.hash_tables.MyHashTable
  data_structures.hash_tables.MyHashTable$MyNodes
-algorithms/sorting/QuickSort.java
- algorithms.sorting.QuickSort
+algorithms/sorting/InsertionSort.java
+ algorithms.sorting.InsertionSort
 interview_question/amazon_interview_questions/ValidParentheses.java
  interview_question.amazon_interview_questions.ValidParentheses
 data_structures/hash_tables/FirstRecurringCharacter.java
@@ -66,5 +66,7 @@ data_structures/hash_tables/MyNode.java
  data_structures.hash_tables.MyNode
 data_structures/linked_lists/doubly/MyDoublyLinkedList.java
  data_structures.linked_lists.doubly.MyDoublyLinkedList
-algorithms/sorting/InsertionSort.java
- algorithms.sorting.InsertionSort
+algorithms/sorting/QuickSort.java
+ algorithms.sorting.QuickSort
+algorithms/sorting/RadixSort.java
+ algorithms.sorting.RadixSort

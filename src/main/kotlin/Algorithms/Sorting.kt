@@ -1,9 +1,14 @@
 package algorithms
 
+import java.util.*
+import kotlin.math.log10
+
 class SortingAlgorithms {
-    fun customSort(array: Array<Int>): Array<Int> {
+    //what first comes to mind - (better than bubblesort at least)
+    //Basically moves the max values to the end. Same as selection sort but with max instead of min values
+    fun customSort(array: Array<Int>): Array<Int> {//O(n^2)
         val arraySize = array.size
-        for (i in 0..arraySize - 2) {
+        for (i in 0 until arraySize - 1) {
             for (j in i + 1 until arraySize) {
                 if (array[i] > array[j]) {
                     val temp = array[j]
@@ -14,6 +19,7 @@ class SortingAlgorithms {
         }
         return array
     }
+
     //never used
     fun bubbleSort(array: Array<Int>): Array<Int> {
         val arraySize = array.size
@@ -28,6 +34,7 @@ class SortingAlgorithms {
         }
         return array
     }
+
     //never used
     fun selectionSort(array: Array<Int>): Array<Int> {
         val arraySize = array.size
@@ -44,6 +51,7 @@ class SortingAlgorithms {
         }
         return array
     }
+
     //for arrays that are nearly sorted, easiest code implementation
     fun insertionSort(array: Array<Int>): Array<Int> {
 
@@ -63,6 +71,7 @@ class SortingAlgorithms {
         }
         return array
     }
+
     //list implementation
     fun insertionSort(items: MutableList<Int>): List<Int> {
         if (items.isEmpty() || items.size < 2) {
@@ -80,6 +89,7 @@ class SortingAlgorithms {
         }
         return items
     }
+
     //time complexity: O(nlog(n)) and space complexity O(n). Best algorithm for worst case scenarios
     fun mergeSort(array: Array<Int>): Array<Int> {
         if (array.size == 1) {
@@ -160,6 +170,52 @@ class SortingAlgorithms {
         arr[i + 1] = arr[high]
         arr[high] = temp
         return i + 1
+    }
+
+    fun radixSort(numbers: IntArray) {
+        val maximumNumber = findMaximumNumberIn(numbers)
+        var numberOfDigits = calculateNumberOfDigitsIn(maximumNumber)
+        var placeValue = 1
+
+        //OR
+        //for (int place = 1; max / place > 0; place *= 10){
+        //      countingSort(array, place);}
+        while (numberOfDigits-- > 0) {
+            applyCountingSortOn(numbers, placeValue)
+            placeValue *= 10
+        }
+    }
+
+    private fun applyCountingSortOn(numbers: IntArray, placeValue: Int) {
+        val range = 10 // radix or the base
+        val length = numbers.size
+        val frequency = IntArray(range)
+        val sortedValues = IntArray(length)
+
+        //find the frequency of each number
+        for (number in numbers) {
+            val digit = number / placeValue % range
+            frequency[digit]++
+        }
+
+        //get the sum of frequencies
+        for (i in 1 until range) {
+            frequency[i] += frequency[i - 1]
+        }
+        for (i in length - 1 downTo 0) {
+            val digit = numbers[i] / placeValue % range
+            sortedValues[frequency[digit] - 1] = numbers[i]
+            frequency[digit]--
+        }
+        System.arraycopy(sortedValues, 0, numbers, 0, length)
+    }
+
+    private fun calculateNumberOfDigitsIn(number: Int): Int {
+        return log10(number.toDouble()).toInt() + 1 // valid only if number > 0
+    }
+
+    private fun findMaximumNumberIn(arr: IntArray): Int {
+        return Arrays.stream(arr).max().asInt
     }
 
 

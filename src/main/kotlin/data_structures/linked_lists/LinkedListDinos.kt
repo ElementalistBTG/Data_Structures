@@ -26,72 +26,72 @@ data class CustomNode<T : Any>(var value: T, var next: CustomNode<T>? = null) {
     }
 }
 
-class LinkedListDinos<T:Any>{
-    private var head : CustomNode<T>? = null
-    private var tail : CustomNode<T>? = null
+class LinkedListDinos<T : Any> {
+    private var head: CustomNode<T>? = null
+    private var tail: CustomNode<T>? = null
     private var length = 0
 
-    fun append(value : T){
+    fun append(value: T) {
         val newNode = CustomNode<T>(value)
-        if(head==null){//the very first element
+        if (head == null) {//the very first element
             head = newNode
-        }else{
+        } else {
             tail?.next = newNode
         }
         tail = newNode
         length++
     }
 
-    fun prepend(value : T){
+    fun prepend(value: T) {
         val newNode = CustomNode<T>(value)
-        if(tail==null){//the very first element
+        if (tail == null) {//the very first element
             head = newNode
-        }else{
+        } else {
             newNode.next = head
         }
         head = newNode
         length++
     }
 
-    fun insert(index: Int,value : T){
+    fun insert(index: Int, value: T) {
         val newNode = CustomNode<T>(value)
-        if(index>=length){
+        if (index >= length) {
             append(value)
         }
-        val elementAtIndex = getElementAtIndex(index-1)
+        val elementAtIndex = getElementAtIndex(index - 1)
         newNode.next = elementAtIndex?.next
         elementAtIndex?.next = newNode
         length++
     }
 
-    fun remove(index:Int){
-        val previousNode = getElementAtIndex(index-1)
+    fun remove(index: Int) {
+        val previousNode = getElementAtIndex(index - 1)
         val nodeToRemove = previousNode?.next
         previousNode?.next = nodeToRemove?.next
         length--
     }
 
-    private fun getElementAtIndex(index : Int): CustomNode<T>?{
+    private fun getElementAtIndex(index: Int): CustomNode<T>? {
         var currentNode = head
         var counter = index
-        while(counter>0){
+        while (counter > 0) {
             currentNode = head?.next
             counter--
         }
         return currentNode
     }
 
-    fun printList(){
-        println("My linked list: "+head.toString()+"with length :${length}")
+    fun printList() {
+        println("My linked list: " + head.toString() + "with length :${length}")
     }
 
-    fun reverse(){
+    fun reverse() {
         //check size
-        if(length>1){
+        if (length > 1) {
             var first = head
             tail = head
             var second = first?.next
-            while(second!=null){
+            while (second != null) {
                 val temp = second.next
                 second.next = first
                 first = second
@@ -100,5 +100,14 @@ class LinkedListDinos<T:Any>{
             head?.next = null
             head = first
         }
+    }
+
+    /*
+    Given a Linked List and a number n, write a function that returns the value at the n’th node from the end of the Linked List.
+     */
+    fun valueAtNodeN(varN: Int): T {
+        //first we must find this node
+        val NodeN = getElementAtIndex(length - varN + 1)
+        return NodeN!!.value
     }
 }
