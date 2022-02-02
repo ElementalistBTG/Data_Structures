@@ -2,19 +2,18 @@ package data_structures
 
 import data_structures.linked_lists.LinkedList
 
-interface Stack<T : Any> {
+interface Stack<T : Any?> {
     fun push(element: T)
     fun pop(): T?
     fun peek(): T?
 
     val count: Int
-        get
 
     val isEmpty: Boolean
         get() = count == 0
 }
 
-class StackImpl<T : Any> : Stack<T> {
+class StackImpl<T : Any?> : Stack<T> {
     private val storage = arrayListOf<T>()
 
     override fun toString() = buildString {
