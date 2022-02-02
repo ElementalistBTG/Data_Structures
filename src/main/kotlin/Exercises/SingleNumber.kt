@@ -6,18 +6,18 @@ You must implement a solution with a linear runtime complexity and use only cons
  */
 
 fun main() {
-//    val myClass = SingleNumber()
-//    val array = intArrayOf(1, 3, 5, 7, 3, 9, 5, 7, 1)
-//    println("the number is : ${myClass.singleNumber3(array)}")
+    val myClass = SingleNumber()
+    val array = intArrayOf(1, 3, 5, 7, 3, 9, 5, 7, 1)
+    println("the number is : ${myClass.singleNumber4(array)}")
 
 //    val myClass = SingleNumber2()
 //    val array = intArrayOf(1, 3, 5, 7, 3, 9, 5, 7, 1, 1, 3, 5, 7)
 //    println("the number is : ${myClass.singleNumber(array)}")
 
-    val myClass = SingleNumber3()
-    val array = intArrayOf(1, 3, 5, 7, 9, 1, 3, 5, 7, 10)
-    val numbers = myClass.singleNumber(array)
-    println("the numbers are : ${numbers.contentToString()}")
+//    val myClass = SingleNumber3()
+//    val array = intArrayOf(1, 3, 5, 7, 9, 1, 3, 5, 7, 10)
+//    val numbers = myClass.singleNumber(array)
+//    println("the numbers are : ${numbers.contentToString()}")
 
 }
 
@@ -43,6 +43,23 @@ class SingleNumber {
     }
 
     fun singleNumber3(nums: IntArray) = nums.reduce(Int::xor)
+
+    fun singleNumber4(nums: IntArray): Int {
+        val myMap = mutableMapOf<Int, Int>()
+        for (num in nums) {
+            if (!myMap.containsKey(num)) {
+                myMap[num] = 1
+            } else {
+                myMap[num] = 2
+            }
+        }
+        for (num in nums) {
+            if (myMap[num] == 1) {
+                return num
+            }
+        }
+        return 0
+    }
 }
 
 /**
@@ -75,9 +92,9 @@ class SingleNumber2 {
     fun singleNumber2(nums: IntArray): Int {
         return nums
             .toList()
-            .groupingBy{it}
+            .groupingBy { it }
             .eachCount()
-            .filterValues{v->v==1}
+            .filterValues { v -> v == 1 }
             .keys
             .first()
     }
@@ -109,8 +126,8 @@ You must write an algorithm that runs in linear runtime complexity and uses only
 class SingleNumber3 {
     fun singleNumber(nums: IntArray): IntArray {
         val set = HashSet<Int>()
-        for(i in nums){
-            if(set.contains(i))
+        for (i in nums) {
+            if (set.contains(i))
                 set.remove(i)
             else
                 set.add(i)

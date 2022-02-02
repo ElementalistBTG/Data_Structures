@@ -4,20 +4,69 @@ package Exercises
 //It doesn't matter what you leave beyond the new length
 
 class RemoveDuplicatesFromSortedArray {
-    fun removeDuplicates(nums: IntArray): Int {
+
+    fun removeDuplicatesReturnArray(nums: IntArray): IntArray { //return the new size
         //we use the fast, slow index approach
-        if(nums.isEmpty()) return 0
+        if (nums.isEmpty()) return nums
 
-        var j=0
-        for(i in 1 until nums.size){
-            if(nums[i]!=nums[j])
-                nums[++j] = nums[i]
+        var slow = 0
+        for (fast in 1 until nums.size) {
+            if (nums[fast] != nums[slow])
+                nums[++slow] = nums[fast]
         }
-        return ++j
+        return nums.copyOf(++slow)
     }
+
+
+    fun removeDuplicates(nums: IntArray): Int { //return the new size
+        //we use the fast, slow index approach
+        if (nums.isEmpty()) return 0
+
+        var slow = 0
+        for (fast in 1 until nums.size) {
+            if (nums[fast] != nums[slow])
+                nums[++slow] = nums[fast]
+        }
+        return ++slow
+    }
+
+    //my solution for return array
+    fun removeDuplicates2(array: IntArray): IntArray {
+
+        //Check the input
+        if (array.size < 2) return array
+
+        val returnArray = mutableListOf<Int>()
+        var slow = 0
+        var fast = 1
+
+        var counter = 1
+        while (fast < array.size) {
+            if (array[slow] != array[fast]) {
+                returnArray.add(array[slow])
+                slow += counter
+                counter = 1
+            } else {
+                counter++
+            }
+            if (fast == array.size - 1) {
+                returnArray.add(array[fast])
+            }
+            fast++
+        }
+
+        return returnArray.toIntArray()
+    }
+
 }
 
-fun main(){
+fun main() {
     val myClass = RemoveDuplicatesFromSortedArray()
-    println(myClass.removeDuplicates(intArrayOf(1,1,2,3,4,4,4,)))
+    val myArray = intArrayOf(-1, 0, 1, 1, 2, 3, 4, 4, 4 ,5, 6)
+    val result = myClass.removeDuplicatesReturnArray(myArray)
+    for (i in result) {
+        print("$i ")
+    }
+
 }
+
