@@ -20,22 +20,33 @@ class SortingAlgorithms {
         return array
     }
 
-    //never used
+    //In bubble sort, we compare each adjacent pair. If they are not in the correct order, we swap them.
+    //We keep repeating the previous step until no swaps are needed, which indicates all the elements are sorted. O(n^2)
+
+    //In the first iteration of the array, if we do not perform any swap,
+    // we know that the array is already sorted so stop sorting,
+    // therefore the time complexity turns out to be linear. O(n)
+    //space complexity is O(1)
     fun bubbleSort(array: Array<Int>): Array<Int> {
         val arraySize = array.size
+        var alreadySorted = true
         for (i in 0 until arraySize - 1) {
             for (j in 0 until arraySize - 1) {
                 if (array[j] > array[j + 1]) {
                     val temp = array[j]
                     array[j] = array[j + 1]
                     array[j + 1] = temp
+                    alreadySorted = false
                 }
+            }
+            if(i==0 && alreadySorted){
+                break
             }
         }
         return array
     }
 
-    //never used
+    //always O(n^2)
     fun selectionSort(array: Array<Int>): Array<Int> {
         val arraySize = array.size
         for (i in 0 until arraySize) {
@@ -52,7 +63,11 @@ class SortingAlgorithms {
         return array
     }
 
+    //O(n) if already sorted, worst case O(n^2)
     //for arrays that are nearly sorted, easiest code implementation
+    //Since it processes the elements from left to right,
+    // it can start before all elements are there (e.g. streaming)
+    // -> This kind of sorting technique is considered online
     fun insertionSort(array: Array<Int>): Array<Int> {
 
         val arraySize = array.size
@@ -172,6 +187,8 @@ class SortingAlgorithms {
         return i + 1
     }
 
+    //Best, average and worst case time complexity: nk where k is the maximum number of digits in elements of array.
+    //space complecity: O(N + k)
     fun radixSort(numbers: IntArray) {
         val maximumNumber = findMaximumNumberIn(numbers)
         var numberOfDigits = calculateNumberOfDigitsIn(maximumNumber)
@@ -185,7 +202,8 @@ class SortingAlgorithms {
             placeValue *= 10
         }
     }
-
+    //Counting sort has O(n+k) time complexity where k is the size of count array
+    //space complecity: O(k)
     private fun applyCountingSortOn(numbers: IntArray, placeValue: Int) {
         val range = 10 // radix or the base
         val length = numbers.size
@@ -218,21 +236,37 @@ class SortingAlgorithms {
         return Arrays.stream(arr).max().asInt
     }
 
+//A sorting technique is stable if it does not change the order of elements with the same value.
+//Out of comparison based techniques, bubble sort, insertion sort and merge sort are stable techniques.
+// Selection sort is unstable as it may change the order of elements with the same value.
+// For example, consider the array 4, 4, 1, 3.
 
 }
 //interview questions about which algorithm to pick
-//#1 - Sort 10 schools around your house by distance: insertion sort
+//#1 - Sort 10 schools around your house by distance:
+// insertion sort
 
-//#2 - eBay sorts listings by the current Bid amount: radix or counting sort (numbers within a certain range)
+//#2 - eBay sorts listings by the current Bid amount:
+// radix or counting sort (numbers within a certain range)
 
-//#3 - Sport scores on ESPN: quick sort (we need better space complexity probably)
+//#3 - Sport scores on ESPN:
+// quick sort (we need better space complexity probably)
 
-//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data: merge sort (since we need the better performance of merge sort)
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data:
+// merge sort (since we need the better performance of merge sort)
 
-//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews: insertion sort
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews:
+// insertion sort
 
-//#6 - Temperature Records for the past 50 years in Canada: radix or counting sort (if we don't have float data) else quicksort
+//#6 - Temperature Records for the past 50 years in Canada:
+// radix or counting sort (if we don't have float data) else quicksort
 
-//#7 - Large user name database needs to be sorted. Data is very random.: merge sort(if we have enough memory) or quicksort
+//#7 - Large user name database needs to be sorted. Data is very random.:
+// merge sort(if we have enough memory) or quicksort
 
-//#8 - You want to teach sorting for the first time: bubble sort, selection sort
+//#8 - You want to teach sorting for the first time:
+// bubble sort, selection sort
+
+//Which sorting algorithm will take the least time when all elements of input array are identical?
+// -> insertion sort
+
