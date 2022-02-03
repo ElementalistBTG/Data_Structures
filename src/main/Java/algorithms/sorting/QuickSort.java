@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
 
+    //worst O(n^2), average-best O(nlog(n))
     public static Integer[] quickSort(Integer[] array, int left, int right) {
         int pivot;
         int partitionIndex;

@@ -8,6 +8,7 @@ import java.util.Arrays;
 
 class RadixSort {
 
+    //Best, average and worst case time complexity: nk where k is the maximum number of digits in elements of array.
     public static void sort(int numbers[]) {
         int maximumNumber = findMaximumNumberIn(numbers);
 
@@ -24,6 +25,7 @@ class RadixSort {
         }
     }
 
+    //Counting sort has O(n+k) time complexity where k is the size of count array
     private static void applyCountingSortOn(int[] numbers, int placeValue) {
         int range = 10; // radix or the base
 
