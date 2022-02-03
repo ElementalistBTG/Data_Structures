@@ -44,25 +44,25 @@ Constraints:
 digits does not contain any leading 0's.
  */
 
-class PlusOne(){
+class PlusOne() {
     fun plusOne(digits: IntArray): IntArray {
         var allNines = false
-        for(i in digits.size-1 downTo 0){
-            if(digits[i]!=9){
+        for (i in digits.size - 1 downTo 0) {
+            if (digits[i] != 9) {
                 digits[i]++
                 break
-            }else{
-                digits[i]=0
-                if(i==0) allNines=true
+            } else {
+                digits[i] = 0
+                if (i == 0) allNines = true
             }
         }
-        return if(allNines){
+        return if (allNines) {
             var newArray = intArrayOf(1)
-            for(i in digits.indices){
+            for (i in digits.indices) {
                 newArray = newArray.plus(0)
             }
             newArray
-        }else{
+        } else {
             digits
         }
     }
@@ -80,10 +80,10 @@ class PlusOne(){
     }
 }
 
-fun main(){
+fun main() {
     val myClass = PlusOne()
     val newArray = myClass.plusOne(intArrayOf(9))
-    for(i in newArray){
+    for (i in newArray) {
         print(i)
     }
 

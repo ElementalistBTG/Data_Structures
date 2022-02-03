@@ -20,6 +20,7 @@ class MoveZeroes {
         println(nums.contentToString())
     }
 
+    //not good solution because it requires extra space
     fun moveZeroes2(nums: IntArray): Unit {
         val numbers = mutableListOf<Int>()
         val zeros = mutableListOf<Int>()
@@ -37,7 +38,7 @@ class MoveZeroes {
 
     fun moveZeroes3(nums: IntArray): Unit {
         var index =0;
-        for(i in 0 until nums.size){
+        for(i in nums.indices){
             if(nums[i]!=0){
                 nums[index++]=nums[i];
             }
