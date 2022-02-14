@@ -10,12 +10,6 @@ class IntersectionOfTwoArrays {
     fun intersect(nums1: IntArray, nums2: IntArray): IntArray {
         val result = mutableListOf<Int>()
         val map = HashMap<Int, Int>()
-//        for(num in nums1){
-//            map[num] = 0
-//        }
-//        for(num in nums1){
-//            map[num] = map[num]!!.plus(1)
-//        }
         nums1.forEach {
             map[it] = map.getOrDefault(it, 0) + 1
         }
@@ -30,7 +24,7 @@ class IntersectionOfTwoArrays {
         return result.toIntArray()
     }
 
-    fun intersect2(nums1: IntArray, nums2: IntArray): IntArray {
+    fun intersection(nums1: IntArray, nums2: IntArray): IntArray {
         val list = mutableListOf<Int>()
         val map = mutableMapOf<Int, Int>()
         nums2.forEach {
@@ -46,6 +40,21 @@ class IntersectionOfTwoArrays {
         }
 
         return list.toIntArray()
+    }
+
+
+    //in case the exercise wants the unique values
+    fun intersectionSet(nums1: IntArray, nums2: IntArray): IntArray {
+        val set = nums1.toHashSet()
+        val resultArray = mutableListOf<Int>()
+        nums2.forEach {
+            if (set.contains(it)) {
+                resultArray.add(it)
+                set.remove(it)
+            }
+        }
+
+        return resultArray.toIntArray()
     }
 
     //using two pointer
@@ -76,6 +85,6 @@ fun main() {
     val myClass = IntersectionOfTwoArrays()
     val array1 = intArrayOf(4, 9, 5)
     val array2 = intArrayOf(9, 4, 9, 8, 4)
-    myClass.intersect(array1, array2).forEach { print(" $it ") }
+    myClass.intersectionSet(array1, array2).forEach { print(" $it ") }
 }
 

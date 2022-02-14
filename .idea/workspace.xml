@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="Structured the classes better">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/IntersectionOfTwoArrays.kt" afterDir="false" />
+    <list default="true" id="80794b0a-61ea-42f5-9c8a-ae2714c18ada" name="Changes" comment="maps and sets examples">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/HappyNumber.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/IsomorphicStrings.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/Maps.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/MinimumIndexSumOfTwoLists.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,19 +19,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_2022_10_32_____Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_2022_10_32_____Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/algorithms/sorting/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/algorithms/sorting/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/algorithms/sorting/RadixSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/algorithms/sorting/RadixSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/MoveZeroes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/MoveZeroes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/MoveZeroesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/MoveZeroesKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/TwoSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/TwoSumKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/TwoSumKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/algorithms/SortingAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/algorithms/SortingAlgorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack$DefaultImpls.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack$DefaultImpls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaArrayListKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/data_structures/StackViaArrayListKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/IntersectionOfTwoArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/IntersectionOfTwoArrays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/IntersectionOfTwoArraysKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Exercises/IntersectionOfTwoArraysKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/test.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/test.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
@@ -54,13 +49,6 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterDir="false" />
@@ -102,9 +90,7 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercises/MoveZeroes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/MoveZeroes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercises/PlusOne.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/PlusOne.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercises/TwoSum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/TwoSum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercises/IntersectionOfTwoArrays.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercises/IntersectionOfTwoArrays.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,12 +136,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Elementalist\IdeaProjects\Data_Structures\src\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dinos\IdeaProjects\Data_Structures\src\main" />
     </key>
@@ -165,16 +148,22 @@
       <recent name="Exercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TwoSumKt">
-    <configuration name="BestTimeToBuyStocks2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercises.BestTimeToBuyStocks2Kt" />
+  <component name="RunManager" selected="Kotlin.MinimumIndexSumOfTwoListsKt">
+    <configuration name="RadixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithms.sorting.RadixSort" />
       <module name="test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainsDuplicateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercises.ContainsDuplicateKt" />
+    <configuration name="HappyNumberKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises.HappyNumberKt" />
       <module name="test.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,15 +176,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleNumberKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercises.SingleNumberKt" />
+    <configuration name="MapsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises.MapsKt" />
       <module name="test.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSumKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercises.TwoSumKt" />
+    <configuration name="MinimumIndexSumOfTwoListsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises.MinimumIndexSumOfTwoListsKt" />
       <module name="test.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.TwoSumKt" />
+        <item itemvalue="Kotlin.MinimumIndexSumOfTwoListsKt" />
+        <item itemvalue="Kotlin.HappyNumberKt" />
         <item itemvalue="Kotlin.IntersectionOfTwoArraysKt" />
-        <item itemvalue="Kotlin.SingleNumberKt" />
-        <item itemvalue="Kotlin.ContainsDuplicateKt" />
-        <item itemvalue="Kotlin.BestTimeToBuyStocks2Kt" />
+        <item itemvalue="Kotlin.MapsKt" />
+        <item itemvalue="Application.RadixSort" />
       </list>
     </recent_temporary>
   </component>
@@ -423,91 +412,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639415315635</updated>
     </task>
-    <task id="LOCAL-00030" summary="PlusOne.kt exercise">
-      <created>1639429099501</created>
+    <task id="LOCAL-00030" summary="recursion examples">
+      <created>1643804874227</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1639429099502</updated>
+      <updated>1643804874227</updated>
     </task>
-    <task id="LOCAL-00031" summary="PlusOne.kt exercise">
-      <created>1639429126812</created>
+    <task id="LOCAL-00031" summary="recursion examples">
+      <created>1643804914617</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1639429126812</updated>
+      <updated>1643804914617</updated>
     </task>
-    <task id="LOCAL-00032" summary="RemoveDuplicatesFromSortedArray.kt exercise">
-      <created>1643374346746</created>
+    <task id="LOCAL-00032" summary="recursion examples">
+      <created>1643819399398</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1643374346746</updated>
+      <updated>1643819399398</updated>
     </task>
-    <task id="LOCAL-00033" summary="RemoveDuplicatesFromSortedArray.kt exercise">
-      <created>1643374379506</created>
+    <task id="LOCAL-00033" summary="recursion examples">
+      <created>1643819412912</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1643374379506</updated>
+      <updated>1643819412912</updated>
     </task>
-    <task id="LOCAL-00034" summary="RemoveDuplicatesFromSortedArray.kt exercise">
-      <created>1643374390488</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1643374390488</updated>
-    </task>
-    <task id="LOCAL-00035" summary="RotateArray.kt exercise">
-      <created>1643403331205</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1643403331205</updated>
-    </task>
-    <task id="LOCAL-00036" summary="RotateArray.kt exercise">
-      <created>1643403343676</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1643403343676</updated>
-    </task>
-    <task id="LOCAL-00037" summary="BestTimeToBuyStocks2.kt exercise">
-      <created>1643406723396</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1643406723396</updated>
-    </task>
-    <task id="LOCAL-00038" summary="BestTimeToBuyStocks2.kt exercise">
-      <created>1643406806321</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1643406806321</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Structured the classes better">
-      <created>1643536851052</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1643536851052</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Structured the classes better">
-      <created>1643537438200</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1643537438200</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Structured the classes better">
-      <created>1643920465269</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1643920465269</updated>
-    </task>
-    <option name="localTasksCounter" value="42" />
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -534,11 +467,19 @@
     <MESSAGE value="MaximumDepthOfBinaryTree" />
     <MESSAGE value="New exercises" />
     <MESSAGE value="PascalsTriangle.kt exercise" />
-    <MESSAGE value="PlusOne.kt exercise" />
-    <MESSAGE value="RemoveDuplicatesFromSortedArray.kt exercise" />
-    <MESSAGE value="RotateArray.kt exercise" />
-    <MESSAGE value="BestTimeToBuyStocks2.kt exercise" />
-    <MESSAGE value="Structured the classes better" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structured the classes better" />
+    <MESSAGE value="radix sort" />
+    <MESSAGE value="recursion examples" />
+    <MESSAGE value="maps and sets examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="maps and sets examples" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
