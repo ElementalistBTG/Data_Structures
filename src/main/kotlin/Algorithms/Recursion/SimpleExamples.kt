@@ -107,4 +107,34 @@ In input we have given tree node values & in output we have to return its maximu
      */
 
 
+    //find the sums of elements in an array using recursion
+    fun sumOfElements(array: IntArray): Int {
+        var sum = 0
+        if (array.size > 1) {
+            sum += array[0] //1
+            val droppedArray  = array.drop(1).toIntArray()
+            sum += sumOfElements(droppedArray)
+        } else {
+            return array.first()
+        }
+        return sum
+    }
+
+    // two parameters passed an array and size of array
+    fun sum(args: Array<Int> , index:Int ):Int{
+        return if(index<=0) 0
+        else (sum(args ,index-1) + args[index-1])      // recursive function call
+    }
+    //Find the sum of elements of an array using tail-recursion
+    fun sum(args: Array<Int> , index:Int, s : Int = 0 ):Int{
+        return if(index<=0) s
+        else sum(args ,index-1, s + args[index-1])     // tail-recursion
+    }
+
+}
+
+fun main(){
+    val revClass = RecursionExamples()
+    val myArray = intArrayOf(1,2,3,4,5,6)
+    println(revClass.sumOfElements(myArray))
 }

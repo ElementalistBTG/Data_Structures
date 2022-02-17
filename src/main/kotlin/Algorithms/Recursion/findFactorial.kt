@@ -3,7 +3,7 @@ class recursionClass {
     //O(n)
     fun findFactorialRecursive(number: Int): Int {
         //kind like input check
-        if (number == 2) return 2
+        if (number == 1) return 1 //works with 2 also
 
         return number * findFactorialRecursive(number - 1)
 
